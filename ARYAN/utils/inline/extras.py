@@ -1,5 +1,7 @@
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
+from ARYAN import app
+
 from config import SUPPORT_CHAT
 
 
@@ -36,6 +38,17 @@ def supp_markup(_):
                     url=SUPPORT_CHAT,
                 ),
             ]
+        ]
+    )
+    return upl
+
+def add_markup(_):
+    upl = InlineKeyboardMarkup(
+        [
+            [
+                InlineKeyboardButton(
+                    text="ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ", url=f"https://t.me/{app.username}?startgroup=True&admin=delete_messages+invite_users"),
+           ],
         ]
     )
     return upl
