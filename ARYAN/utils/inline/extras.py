@@ -68,3 +68,18 @@ def suppclose_markup(_):
         ]
     )
     return upl
+
+def lood_markup(_):
+    upl = InlineKeyboardMarkup(
+        [
+           [ 
+                InlineKeyboardButton(
+                        text="ʙᴀᴄᴋ", callback_data=f"settingsback_helper"
+                    ),
+                    InlineKeyboardButton(
+                        text="ᴄʟᴏsᴇ", callback_data=f"close"
+                    ),
+           ],
+        ]
+    )
+    return upl
