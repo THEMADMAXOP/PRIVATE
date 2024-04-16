@@ -52,3 +52,19 @@ def add_markup(_):
         ]
     )
     return upl
+
+def suppclose_markup(_):
+    upl = InlineKeyboardMarkup(
+        [
+            [
+                 InlineKeyboardButton(
+                text="✨ꜱᴜᴘᴘᴏʀᴛ✨", url=SUPPORT_CHAT,
+            ),
+                InlineKeyboardButton(
+                    text=_["CLOSE_BUTTON"],
+                    callback_data="close",
+                ),
+            ]
+        ]
+    )
+    return upl
