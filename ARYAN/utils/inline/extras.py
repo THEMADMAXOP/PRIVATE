@@ -69,7 +69,7 @@ def suppclose_markup(_):
     )
     return upl
 
-def lood_markup(_):
+def source_markup(_):
     upl = InlineKeyboardMarkup(
         [
            [ 
@@ -83,3 +83,36 @@ def lood_markup(_):
         ]
     )
     return upl
+
+def lood_markup(_):
+    upl = InlineKeyboardMarkup(
+        [
+                [
+                    InlineKeyboardButton(
+                        text="ᴄʜᴀɴɴᴇʟ", url="https://t.me/STATUSDAIRY2"
+                    ),
+
+                    InlineKeyboardButton(
+                        text="ᴍᴜsɪᴄ ɢʀᴏᴜᴘ", url="https://t.me/vohmusic"
+                    ),
+                    
+                ],
+                [
+                    InlineKeyboardButton(
+                        text="ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/ABOUT_SASHIKANT/3"
+                    ),
+
+                    InlineKeyboardButton(
+                        text="sᴜᴘᴘᴏʀᴛ", url="https://t.me/VOICEOFHEART0"
+                    ),
+                    
+                ],
+                [
+                    InlineKeyboardButton(
+                        text="ʙᴀᴄᴋ", callback_data=f"settingsback_helper"
+                    )
+                ],
+            ]
+    )
+    return upl
+
