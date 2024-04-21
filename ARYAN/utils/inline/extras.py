@@ -58,7 +58,8 @@ def suppclose_markup(_):
         [
             [
                  InlineKeyboardButton(
-                text="✨ꜱᴜᴘᴘᴏʀᴛ✨", url=SUPPORT_CHAT,
+                    text=_["S_B_9"],
+                    url=SUPPORT_CHAT,
             ),
                 InlineKeyboardButton(
                     text=_["CLOSE_BUTTON"],
