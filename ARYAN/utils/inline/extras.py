@@ -2,6 +2,8 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from ARYAN import app
 
+import config
+
 from config import SUPPORT_CHAT
 
 
@@ -100,7 +102,7 @@ def lood_markup(_):
                 ],
                 [
                     InlineKeyboardButton(
-                        text="ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/ABOUT_SASHIKANT/3"
+                        text="ᴅᴇᴠᴇʟᴏᴘᴇʀ", user_id=config.OWNER_ID
                     ),
 
                     InlineKeyboardButton(
