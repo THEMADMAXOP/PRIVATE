@@ -4,6 +4,8 @@ from pyrogram.types import InlineKeyboardButton
 
 from ARYAN.utils.formatters import time_to_seconds
 from ARYAN.utils.inline import lood2_markup
+from config import BANNED_USERS
+from ARYAN import app
 
 
 
