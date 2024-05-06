@@ -2,7 +2,7 @@ from pyrogram.types import InlineKeyboardButton
 
 import config
 from ARYAN import app
-from ARYAN.plugins.bot.settings import lood2
+
 
 
 def start_panel(_):
