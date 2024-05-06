@@ -2,7 +2,7 @@ import random
 from typing import Dict, List, Union
 
 from ARYAN import userbot
-from ARYAN.core.mongo import mongodb, pymongodb
+from ARYAN.core.mongo import mongodb
 
 authdb = mongodb.adminauth
 authuserdb = mongodb.authuser
