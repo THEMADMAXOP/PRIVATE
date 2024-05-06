@@ -3,7 +3,16 @@ import math
 from pyrogram.types import InlineKeyboardButton
 
 from ARYAN.utils.formatters import time_to_seconds
-from ARYAN.plugins.bot.settings import lood2
+from ARYAN.utils.inline import lood2_markup
+
+
+
+@app.on_callback_query(filters.regex("lood2") & ~BANNED_USERS)
+@languageCB
+async def support(client, CallbackQuery, _):
+    await CallbackQuery.edit_message_text(
+        text="ʜᴇʀᴇ ɪs ᴛʜᴇ ʟɪɴᴋ ᴛᴏ ᴛʜᴇ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ .",
+        reply_markup=lood2_markup(_))
 
 
 def track_markup(_, videoid, user_id, channel, fplay):
