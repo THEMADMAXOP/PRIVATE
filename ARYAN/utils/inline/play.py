@@ -1,30 +1,14 @@
 import math
-from pyrogram import filters
-from pyrogram.types import (
-    CallbackQuery,
-    InlineKeyboardButton,
-    InlineKeyboardMarkup,
-    Message,
-    InputMediaPhoto,
-    InputMediaVideo,
-)
-from ARYAN.utils.decorators.language import language, languageCB
+
 
 from pyrogram.types import InlineKeyboardButton
 
 from ARYAN.utils.formatters import time_to_seconds
-from ARYAN.utils.inline import lood2_markup
-from config import BANNED_USERS
-from ARYAN import app
 
 
 
-@app.on_callback_query(filters.regex("lood2") & ~BANNED_USERS)
-@languageCB
-async def support(client, CallbackQuery, _):
-    await CallbackQuery.edit_message_text(
-        text="ʜᴇʀᴇ ɪs ᴛʜᴇ ʟɪɴᴋ ᴛᴏ ᴛʜᴇ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ .",
-        reply_markup=lood2_markup(_))
+
+
 
 
 def track_markup(_, videoid, user_id, channel, fplay):
@@ -88,11 +72,6 @@ def stream_markup_timer(_, chat_id, played, dur):
             InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
-        [
-            InlineKeyboardButton(
-                    text=_["S_B_9"],
-                    callback_data="lood2"),
-                ],
     ]
     return buttons
 
