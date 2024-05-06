@@ -119,3 +119,25 @@ def lood_markup(_):
     )
     return upl
 
+def lood2_markup(_):
+    upl = InlineKeyboardMarkup(
+        [
+                [
+                    InlineKeyboardButton(
+                        text="ᴅᴇᴠᴇʟᴏᴘᴇʀ", user_id=config.OWNER_ID
+                    ),
+
+                    InlineKeyboardButton(
+                        text="sᴜᴘᴘᴏʀᴛ", url="https://t.me/VOICEOFHEART0"
+                    ),
+                    
+                ],
+                [
+                    InlineKeyboardButton(
+                        text="ᴄʟᴏsᴇ", callback_data=f"close"
+                    )
+                ],
+            ]
+    )
+    return upl
+
