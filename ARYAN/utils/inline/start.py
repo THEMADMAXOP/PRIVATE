@@ -27,12 +27,8 @@ def private_panel(_):
         ],
         [InlineKeyboardButton(text=_["S_B_4"], callback_data="settings_back_helper")],
         [
-            InlineKeyboardButton(text=_["S_B_2"], callback_data="lood"),
-            InlineKeyboardButton(text=_["S_B_7"], callback_data="gib_source"),
-            
-        ],
-        [
-            InlineKeyboardButton(text=_["ST_B_3"], callback_data="LG"),
+            InlineKeyboardButton(text=_["S_B_6"], user_id=config.SUPPORT_CHANNEL),
+            InlineKeyboardButton(text=_["S_B_5"], url=config.OWNER_ID),
         ],
     ]
     return buttons
